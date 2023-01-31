@@ -1,6 +1,5 @@
-# Web page iPhone 14
+# web page-ux-ui-designer
 
 To start a project:
 #### `live server`
 
-or use the link -  [iPhone 14](https://myazinas.github.io/web-main-page-iphone/)
