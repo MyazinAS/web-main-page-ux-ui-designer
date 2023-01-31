@@ -1,0 +1,324 @@
+@import "../scss/normalize.scss";
+/*==========================================================================================================================*/
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("../fonts/Gilroy-Bold.woff") format("woff"),
+    url("../../fonts/Gilroy-Bold.ttf") format("truetype"),
+    url("../fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("../fonts/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gilroy-Medium.ttf") format("truetype"),
+    url("../fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  /*Цвет скролла*/
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  /*Закругление ползунка*/
+  background-color: #ccc;
+  /*Цвет ползунка*/
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  /*Толщина скролла*/
+}
+
+* {
+  scrollbar-color: #ccc #fff;
+  /*Цвет скролла, цвет ползунка*/
+  scrollbar-width: thin;
+  /*Толщина скролла thin, auto*/
+}
+
+body {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 973px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.title {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+}
+
+.header {
+  &__container {}
+
+  &__home {
+    font-family: "Gilroy-Bold";
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0px 20px;
+  }
+
+  &__title {
+    font-size: 47.3392px;
+    line-height: 59px;
+  }
+
+  &__description {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    padding-top: 55px;
+
+  }
+
+  &__txt-ru-or-en {
+    font-size: 16px;
+    line-height: 20px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    margin-bottom: 23px;
+  }
+
+  &__txt-ru-or-en span {
+    color: #828282;
+  }
+
+  &__img {
+    margin-bottom: 95px;
+  }
+}
+
+.nav__scroll {
+  position: fixed;
+  border: 1px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8.99px;
+  padding-bottom: 31.92px;
+  color: #828282;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #828282;
+
+  &__item {}
+
+  &__item:first-child {
+
+    color: #070707;
+  }
+
+  &__item:hover {
+
+    color: #070707;
+  }
+
+  &__link {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////
+.about-me {
+  background: #f6f6f6;
+
+  &__title {
+    padding: 120px 0px 17px;
+  }
+
+  &__txt {
+    padding-bottom: 95px;
+  }
+
+  &__txt-p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    padding-bottom: 45px;
+  }
+}
+
+.about-me__txt p:last-child {
+  padding-bottom: 0px;
+}
+
+.skills {
+
+  &__title {
+    padding: 103px 0px 69px;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 83px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 108px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__txt {
+    margin: 23px 0px 41px;
+  }
+}
+
+.portfolio {
+  background: #f6f6f6;
+
+  &__title {
+    padding: 114px 0px 51px;
+  }
+
+  &__txt {
+    padding: 32px 0px 99px;
+    text-align: center;
+  }
+}
+
+.contacts {
+  &__title {
+    margin: 116px 0px 20px;
+  }
+
+  &__txt-chat {
+    margin-bottom: 29px;
+    text-align: center;
+  }
+
+  &__btn-a {
+    display: inline-block;
+    padding: 12px 29px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #000000;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    padding: 85px 0px 45px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 61px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__txt-social-media {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding-bottom: 147px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1100px) {}
+
+@media (max-width: 940px) {}
+
+@media (max-width: 850px) {
+  .skills {
+    &__txt {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .contacts {
+    &__items {}
+  }
+}
+
+@media (max-width: 750px) {}
+
+@media (max-width: 450px) {
+  .skills {
+    &__item {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0px 26px;
+  }
+
+}
+
+@media (max-width: 350px) {}
